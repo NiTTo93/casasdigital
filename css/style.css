@@ -79,14 +79,6 @@ a:hover{color:var(--accent-2)}
 .footer p{color:var(--gray);font-size:.85rem}
 .footer__links{display:flex;gap:20px;justify-content:center;margin-top:8px}
 .footer__links a{color:var(--gray);font-size:.85rem}
-/* Dropdown nav */
-.nav__dropdown{position:relative}
-.nav__dropdown-toggle{color:rgba(255,255,255,.65);font-size:.9rem;font-weight:500;cursor:pointer}
-.nav__dropdown-toggle:hover{color:#fff}
-.nav__dropdown-menu{display:none;position:absolute;top:100%;left:-12px;background:#161620;border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:8px 0;min-width:220px;box-shadow:0 12px 40px rgba(0,0,0,.4);z-index:200}
-.nav__dropdown:hover .nav__dropdown-menu{display:block}
-.nav__dropdown-menu a{display:block;padding:10px 20px;color:rgba(255,255,255,.6);font-size:.85rem;transition:all .15s}
-.nav__dropdown-menu a:hover{background:rgba(79,125,249,.1);color:#fff}
 /* Page hero (inner pages) */
 .page-hero{padding:140px 0 64px;background:radial-gradient(ellipse at 20% 50%,rgba(79,125,249,.07) 0%,transparent 60%)}
 .page-hero__tag{display:inline-flex;align-items:center;gap:8px;background:var(--accent-glow);border:1px solid rgba(79,125,249,.2);padding:6px 14px;border-radius:20px;font-size:.8rem;color:var(--accent);margin-bottom:16px}
@@ -125,10 +117,5 @@ a:hover{color:var(--accent-2)}
 .cta__btns,.hero__btns{flex-direction:column;align-items:center}
 .two-col{grid-template-columns:1fr}.page-hero h1{font-size:2rem}
 .nav__links{flex-direction:column;align-items:flex-start;gap:0;position:absolute;top:100%;left:0;right:0;background:#161620;border-bottom:1px solid rgba(255,255,255,.07);padding:12px 24px 20px;box-shadow:0 12px 32px rgba(0,0,0,.5)}
-.nav__links a,.nav__dropdown-btn{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.04);width:100%}
-.nav__links .nav__cta{margin-top:8px;border-bottom:none;text-align:center;justify-content:center}
-.nav__dropdown{width:100%}
-.nav__dropdown-menu{position:static;display:block;transform:none;background:transparent;border:none;box-shadow:none;padding:4px 0 4px 14px;margin-top:0}
-.nav__dropdown-menu a{border-bottom:none;padding:8px 0;font-size:.85rem;color:var(--gray)!important;width:auto}
-.nav__dropdown-menu a:hover{background:transparent;color:var(--accent)!important}
-.nav__dropdown-btn::after{display:none}}
+.nav__links a{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.04);width:100%}
+.nav__links .nav__cta{margin-top:8px;border-bottom:none;text-align:center;justify-content:center}}
