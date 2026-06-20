@@ -121,3 +121,20 @@ a:hover{color:var(--accent-2)}
 .nav__links .nav__cta{margin-top:8px;border-bottom:none;text-align:center;justify-content:center}}
 
 .page-top { padding-top: 120px; }
+/* Brands / Experiencia */
+.brands__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.brand{background:var(--dark-3);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:28px 24px;transition:border-color .3s}
+.brand:hover{border-color:rgba(79,125,249,.25)}
+.brand__name{font-size:1.2rem;font-weight:700;margin-bottom:8px;letter-spacing:-.01em}
+.brand__desc{font-size:.85rem;color:var(--gray);line-height:1.5;margin-bottom:16px}
+.brand__badge{display:inline-block;font-size:.75rem;padding:4px 10px;border-radius:20px;font-weight:500}
+.brand__badge--uk{background:rgba(30,144,255,.15);color:#5aacff}
+.brand__badge--es{background:rgba(255,165,0,.12);color:#f5a623}
+.brand__badge--int{background:rgba(79,125,249,.15);color:var(--accent)}
+/* Footer zones */
+.footer__zones{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,.05)}
+.footer__zones-title{display:block;color:var(--gray);font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:10px}
+.footer__zones-links{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+.footer__zones-links a{color:var(--gray);font-size:.85rem}
+.footer__zones-links a:hover{color:var(--accent)}
+@media(max-width:768px){.brands__grid{grid-template-columns:1fr 1fr}}
