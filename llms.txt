@@ -1,0 +1,15 @@
+# casasdigital.es — Juan Casas, Consultor SEO Local en Cádiz
+
+> Servicios de SEO local, diseño web y consultoría para negocios de Cádiz y Jerez. Portfolio con proyectos propios (etiases.com, webs de control de plagas y reformas en la Bahía de Cádiz). Contenido actualizado y casos reales documentados.
+
+## Servicios
+- /sectores.html — SEO por sector (abogados, clínicas dentales, inmobiliarias, restaurantes, notarías, joyerías)
+- /seo-cadiz.html — posicionamiento SEO en Cádiz
+- /consultoria-seo.html — consultoría SEO
+- /diseno-web-seo.html — diseño web con SEO incluido
+- /google-business-profile.html — optimización de Google Business Profile
+- /blog/ — guías de SEO local
+
+## Contacto
+- /contacto.html — solicitud de consulta gratuita
+- WhatsApp directo desde la web
