@@ -434,3 +434,11 @@ a:hover{color:var(--accent-2)}
   .blog-cta { padding: 32px 22px; }
 }
 
+
+/* ── Botones: proteger color sobre cualquier contexto ── */
+a.btn--primary, .article-body a.btn--primary, .blog-cta a.btn--primary {
+  color: #ffffff !important;
+}
+a.btn--outline, .article-body a.btn--outline, .blog-cta a.btn--outline {
+  color: #ffffff !important;
+}
