@@ -1,1 +1,7 @@
+# Redirect index.html a la raiz (consolidar senales de la home)
+RewriteEngine On
+RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
+RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
+
+# llms.txt como markdown
 AddType text/markdown .md .txt
