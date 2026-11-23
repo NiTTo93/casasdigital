@@ -154,3 +154,33 @@ Macías (SF) · Gira Dental · Clínica Vet SF.org · ClaraVet
 ## ❌ FUERA:
 Zona Sur Dental (es de TAFALLA/Navarra — el IG que salió
 era otra clínica homónima)
+
+---
+# 🔍 CAZA v5 (24-nov) — Cádiz capital + Jerez + El Puerto (~12 webs nuevas)
+
+## AUDITADAS NUEVAS:
+Enyident (EPSM, odontopediatría) ✓ · Clínica Pinto (Jerez) ✓ ·
+Clínica Los Ángeles (Jerez) ·sin analytics· · Santa Maria Dental
+(EPSM) ·sin analytics· · Abogado Extranjería Cádiz ✓ ·
+Clínica Gener (Jerez, 1990) ✓ · Dental Carrero (Jerez) ✓ ·
+Azahares (Jerez) y Cliniden (EPSM): webs no responden (posible
+web caída SIN dominio activo — investigar por GBP si tienen web
+real en otra URL)
+
+## RESULTADO: 0 hacked nuevos · 2 sin analytics
+La Bahía está completamente limpiada de hacked content:
+audité en total ~50 webs y los únicos 4 fallos gordos son
+TUS leads del pipeline (3 hackeados + PEYMA caída).
+
+## 📌 LECTURA ESTRATÉGICA FINAL
+1. El pipeline de rescates (4 leads) es EXHAUSTIVO — no hay
+   más hacked en la Bahía. Quien quiera "fallos gordos"
+   nuevos tiene que salir de la provincia.
+2. Las ~10 webs limpias sin analytics = pitch suave de
+   auditoría/medición (150€) — no urgencia.
+3. PEYMA (web caída) sigue siendo la venta más fácil del
+   portfolio — fallo diario y visible en 5 segundos.
+4. Siguiente ola con fallos gordos probables: ampliar a
+   Sevilla capital / Cádiz interior (Arcos, Medina) / Costa
+   Ballena-Chiclana Playa (hoteles y chiringuitos con webs
+   viejas de temporada).
