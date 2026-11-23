@@ -37,11 +37,33 @@
 
 ## 📋 PRIORIZACIÓN (por facilidad de cierre × ticket):
 TOP 5 PARA EMPEZAR:
-1. Suraña González (San Fernando) — GBP débil + tu ciudad → puerta fácil, GBP+reseñas
-2. El Bosque Clínica Dental (Jerez) — web activa + ticket alto → agente IA con demo telefónica
-3. Gestoría AC Puerto (El Puerto) — B2B, automatizaciones de citas
-4. M&M Dental (Jerez) — agente IA para urgencias
-5. Clínica Fuentes Méndez (Cádiz) — auditoría como puerta de entrada (150€ = fácil decidir)
+1. ⭐ SURAÑA GONZÁLEZ (San Fernando — tu ciudad, presencial)
+   Web: suranagonzalezodontologos.es — VERIFICADO 21-nov:
+   · WordPress 5.1 (versión de 2019 — 7 años sin actualizar)
+   · SIN meta description · SIN analytics (no mide nada)
+   · SIN responsive (@media: 0) — la web NO se adapta al móvil
+     → el 70% de sus pacientes la visita desde el móvil y se
+       encuentra una web de ordenador en miniatura
+   · Solo 328 palabras · canonical en http:// (sin HTTPS)
+   · GBP: 4.2★ con solo 34 reseñas (competencia: 200+)
+   PITCH: "Su web no se ve bien en el móvil y no aparece
+   en Google. Yo se la arreglo: web nueva rápida + reseñas.
+   Le enseño en persona el antes/después — estoy en San Fernando."
+   SERVICIOS: web nueva (600€) + GBP/reseñas + auditoría 150€
+   VENTAJA: presencial (tu ciudad) + web catastrófica =
+   el pitch se demuestra solo poniendo su web en el móvil
+   delante del gerente
+
+2. El Bosque Clínica Dental (Jerez) — paga Google Ads + Meta
+   (verificado: gtag=4, pixel=7) → agente IA + landing de captación
+   "Su presupuesto de Ads trae gente a una página que no convierte"
+
+3. Clínica Fuentes Méndez (Cádiz) — ads activos + 11 WhatsApp sin
+   atender automático → agente WhatsApp + automatización
+
+4. Gestoría AC Puerto (El Puerto) — B2B → automatizaciones de citas
+
+5. M&M Dental (Jerez) — agente IA para urgencias
 
 ## 📬 EL PITCH POR SERVICIO (una frase):
 - AUDITORÍA SEO 150€: "Su web no aparece cuando buscan 'dentista San Fernando'. Por 150€ le digo exactamente por qué y cómo arreglarlo, en 72 horas."
@@ -62,6 +84,18 @@ TOP 5 PARA EMPEZAR:
 4. Presencial para San Fernando/Cádiz capital (tu ciudad: cafetería + presentación de 15 min)
 
 ## 🔬 DATOS VERIFICADOS TÉCNICAMENTE (21-nov-2026):
+
+### Suraña González Odontólogos (San Fernando) — ⭐ Nº1 · AUDITADA
+- Web: suranagonzalezodontologos.es · WordPress 5.1.19 (2019!)
+- **SIN meta description · SIN analytics · SIN responsive**
+- 328 palabras · canonical http:// (sin HTTPS)
+- GBP: 4.2★ · 34 reseñas (C/ Real 24, San Fernando)
+- Tel: +34 9xx xx 92 42 (en la ficha)
+→ AUDITORÍA EXPRESS QUE YA PUEDES MOSTRAR:
+  1. Su web en el móvil delante del gerente (se ve en miniatura)
+  2. "Busque dentista San Fernando" → no aparece en top-5
+  3. Su competencia con 200+ reseñas vs sus 34
+  → el pitch se demuestra en 2 minutos sin PowerPoint
 
 ### El Bosque Clínica Dental (Jerez) — ⭐ PRIORIDAD MÁXIMA
 - Web: WordPress · 1.873 palabras · carga 215ms
