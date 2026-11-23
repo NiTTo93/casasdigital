@@ -125,3 +125,32 @@ LA SIGUIENTE OLA de rescates requiere ampliar radio:
 Sevilla/Cádiz capital/Jerez profundo (más webs, más
 WordPress viejo) — la misma auditoría automatizada
 escala a cualquier lista de dominios.
+
+---
+# 🔍 CAZA v4 (24-nov) — dental Jerez/SF/Cádiz (15 webs nuevas)
+
+## 🚨 FALLO GORDO NUEVO:
+**PEYMA DENTAL (Jerez)** — peymadental.com CAÍDA en modo
+mantenimiento (og:type="Maintenance", contenido: "Gracias
+por su visita"). Dominio vivo (200) pero la web muerta.
+Pitch de 5 segundos: "busque 'clínica dental Jerez',
+entre en su web" → cada paciente de Jerez encuentra una
+web muerta. Venta: web nueva + recuperación de posición.
+(Verificar cuánto tiempo lleva así — Wayback Machine)
+
+## 🟡 MEDIOS NUEVOS:
+· BucalClinic SAN FERNANDO (bucalclinicsanfernando.com)
+  — sin analytics. ¡MISMA MARCA que la hackeada de Cádiz!
+  = es un GRUPO. El pitch al grupo: "si hackearon la de
+  Cádiz, la suya es el siguiente objetivo" + auditoría
+  del grupo entero.
+· Grupo Dental Clinics — sin sitemap.xml (cadena nacional)
+· Clínica Dental Cádiz / Santana (Jerez) — sin analytics
+· Islavet (SF) — sin sitemap + sin analytics
+
+## ✓ LIMPIAS:
+Macías (SF) · Gira Dental · Clínica Vet SF.org · ClaraVet
+
+## ❌ FUERA:
+Zona Sur Dental (es de TAFALLA/Navarra — el IG que salió
+era otra clínica homónima)
