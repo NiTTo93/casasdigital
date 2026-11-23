@@ -36,5 +36,10 @@ no se lee hasta el lunes: ahí se van pacientes.
 web general en vez de a una página específica de implantología
 o estética (que es donde convierte más).
 
-¿Os importa que os mande cómo lo arreglaría? Es sin coste ni
+3) Y esto me sorprendió lo más: busqué "clínica dental Cádiz
+centro" e "implantes Cádiz" y no os vi en las primeras posiciones —
+teniendo vosotros la mejor valoración de la zona (4.9★) y 89 años
+de historia. Ese es un problema que se arregla.
+
+¿Os importa que os mande cómo lo arreglaría todo? Es sin coste ni
 compromiso — y si no os convence, no pasa nada."
