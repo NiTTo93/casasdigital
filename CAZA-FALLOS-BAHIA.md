@@ -86,3 +86,42 @@ LECCIÓN DEL PROCESO (para próximos pitches): siempre verificar
 con render + contexto antes de afirmar fallos. El pitch de
 Bucalclinic es sólido SOLO con el dato del cloaking (que es
 real y demostrable con el código fuente).
+
+---
+# 🔍 CAZA v3 (24-nov) — sector jurídico/gestoría/salud ampliado
+
+## RESULTADO: fallos gordos agotados en la Bahía
+Audité ~15 webs más (jurídico, gestorías, veterinarias,
+dental, extranjería, hoteles): CERO hacked content nuevo.
+La Bahía está limpiada — los 3 rescates (Bucalclinic,
+AC Puerto, Odonto Avenida) son EXCLUSIVOS por ahora.
+
+## FALLOS MEDIOS NUEVOS (pitch auditoría 150€):
+- **Islavet (SF)** — sin sitemap.xml + sin analytics
+  (clínica veterinaria con web nueva: islavet.apptivate.app
+  es su app; la web principal sin sitemap)
+- **2ª Oportunidad Sevilla (page El Puerto)** — sin
+  sitemap.xml (el despacho que posiciona para "segunda
+  oportunidad El Puerto")
+- **Experto Extranjería (Málaga)** — sin sitemap.xml
+  (FUERA de la Bahía pero posiciona para búsquedas
+  de extranjería del sur → pitch etiases + SEO)
+- Estética Dental Chiclana / Vet La Fauna / Vet La
+  Casería / Cleardent / Autoescuela Villar — sin
+  analytics (medio: "no saben cuántos clientes les
+  trae la web")
+
+## VERIFICADOS LIMPIOS (descartados):
+Tamayo · ClaraVet · ConectaIA360 · AbogadoExtranjería
+Mallorca · Ventura · FZ · AGA (sin analytics = medio)
+
+## 📌 CONCLUSIÓN ESTRATÉGICA
+La Bahía pequeña (30 webs auditadas en total) tiene:
+3 hacked (todos ya en pipeline) + ~8 sin sitemap/analytics
+El problema de los hacked es RARO y YO tengo los 3 casos
+→ argumento de autoridad local: "yo encuentro lo que
+nadie más ve"
+LA SIGUIENTE OLA de rescates requiere ampliar radio:
+Sevilla/Cádiz capital/Jerez profundo (más webs, más
+WordPress viejo) — la misma auditoría automatizada
+escala a cualquier lista de dominios.
