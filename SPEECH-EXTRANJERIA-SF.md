@@ -154,3 +154,11 @@ exactamente lo que ustedes hacen — y eso se construye."
    se va a Málaga."
 
 ## ⏰ TIMING: martes-jueves 9:00-12:00 · enero = presupuesto anual
+
+## 🔍 HALLAZGO EXTRA (verificado 23-nov ~19:00)
+**Mateo López tiene el sitemap.xml en 404** — Google tarda el triple
+en descubrir sus páginas nuevas sin sitemap. Se añade a los 3
+hallazgos del modo B como el cuarto: "su web ni siquiera tiene el
+archivo que le dice a Google qué páginas existen — cada página
+nueva tarda semanas en aparecer en el buscador, cuando podría
+aparecer en 48 horas."
