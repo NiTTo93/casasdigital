@@ -38,13 +38,14 @@ en su caso? Sin compromiso."
 
 ## 📋 LOS 3 HALLAZGOS (si responden que sí)
 
-1. **La web vs las gestorías online**
-   [captura SERP de "gestoría autónomos El Puerto"] — "las gestorías
-   online (Billeo, Declarando, asesoriaautonomos...) están rankeando
-   para EL PUERTO desde Madrid con webs llenas de contenido y tarifas
-   visibles. Sus futuros autónomos buscan en el móvil y clican la
-   primera que explica precios. 357 palabras en la web = invisible
-   frente a eso."
+1. **El top-2 con la web más vacía de la SERP**
+   [captura de su web + la SERP] — "Estáis segundos en la búsqueda
+   principal de vuestra ciudad: la posición es perfecta. Pero el
+   visitante llega a una página de 357 palabras sin precios, sin
+   WhatsApp y sin forms de presupuesto. Las gestorías online
+   nacionales captan esos mismos buscadores con tarifas visibles
+   y presupuestadores automáticos. El tráfico ya lo tenéis — lo
+   que falta es el sistema que lo convierta en altas."
 
 2. **Las horas de equipo que se van en repetir** (la automatización)
    — "cada trimestre: aviso a X clientes de IVA, recoger documentación
@@ -52,11 +53,11 @@ en su caso? Sin compromiso."
    automático por WhatsApp con plantilla + un estado de expediente
    compartido. Horas de equipo al mes convertidas en minutos."
 
-3. **No saben cuántos clientes les trae la web** (sin analytics)
-   — "sin estadísticas instaladas, no se puede saber si la web trae
-   altas de autónomos (que es el cliente más rentable de una gestoría).
-   Instalar la medición es lo primero — gratis al contratar cualquier
-   servicio."
+3. **No saben cuántas altas les trae la web** (sin analytics)
+   — "estando top-2, cada mes entra gente buscando exactamente lo
+   que vendéis... y no se puede saber cuántos son ni cuántas altas
+   generan. Instalar la medición es lo primero — gratis al contratar
+   cualquier servicio."
 
 ## 💰 LA OFERTA (escalonada — asesoría = presupuesto ajustado pero cliente fiel)
 
