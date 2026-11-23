@@ -1,106 +1,113 @@
-# 🎯 SPEECH — GESTORÍA-ASESORÍA AC PUERTO (El Puerto de Santa María)
+# 🚨 SPEECH — AC PUERTO (RESCATE DE EMERGENCIA, no pitch de marketing)
 
-## FICHA (verificada 23-nov-2026)
-- Web: acpuerto.com — WordPress · **357 palabras (web casi vacía)**
-- Dirección: C/ Luis Mazantini, 37 · 11500 El Puerto
-- Tel: 956 05 52 43
-- Servicios: fiscal, laboral, contable — pymes y autónomos + telemático
-- SIN analytics (no mide nada) · SIN WhatsApp · 1 formulario
-- Listada en dameunaasesoria.com (canal directo de citas)
+## SITUACIÓN VERIFICADA (23-nov-2026)
+- Dominio: acpuerto.com — Gestoría-Asesoría AC Puerto, C/ Luis
+  Mazantini 37, El Puerto · Tel: 956 05 52 43
+- La web pública tiene 13 páginas legítimas de la asesoría
+  (laboral, fiscal-contable, DGT, gestoría, pymes, jurídico...)
+- **El sitemap.xml DECLARA 991 URLs de contenido de CASINO**
+  (ruleta, tragaperras, blackjack, cripto — en español, inglés,
+  polaco, alemán, francés, holandés, checo, italiano, húngaro,
+  ruso, portugués)
+- Las URLs de casino RESPONDEN 200 (están vivas en el dominio)
+- Ejemplo verificado: acpuerto.com/aplicacion-android-para-hackear-slots...
+- Su página principal está TOP-2 en "asesoría El Puerto de Santa María"
 
-## EL PITCH (este es de AUTOMATIZACIONES — el sector B2B con cierre más rápido)
-Una asesoría vive de PROCESOS: altas de autónomos, nóminas mensuales,
-trimestrales de IVA, IRPF anual, constituciones de sociedades, notas
-de impago... Cada cliente-autónomo genera los mismos trámites cada
-trimestre. Si la gestoría lo hace a mano, tu pitch es literal:
-"¿cuántas horas al trimestre pasa su equipo haciendo lo mismo de
-cada cliente?"
+## QUÉ ES ESTO TÉCNICAMENTE
+O la web fue hackeada (inyección masiva de contenido casino),
+o alguien montó una red de contenido casino ENCIMA del dominio
+de la asesoría (el clásico "el informático/la agencia anterior
+lo hacía raro"). En ambos casos:
+- Google puede penalizar MANUALMENTE el dominio entero
+  (spam inyectado + casino = targets explícitos de los spam
+  updates de 2026)
+- El riesgo inmediato: la posición top-2 de "asesoría El Puerto"
+  desaparece de golpe, y con ella el flujo de clientes
+- Puede incluso afectar la confianza del dominio para el email
+  (los correos de la gestoría marcados spam)
 
-## 📱 EL MENSAJE DE WHATSAPP (al 956 05 52 43)
+## ⚠️ REGLAS DE CONTACTO (esto NO es un pitch de marketing)
+- ❌ NO WhatsApp frío con "veo que tenéis casino en la web"
+  (accusatorio y confuso: el dueño probablemente NO SABE
+  qué hay en su sitemap)
+- ✓ CANAL: llamada telefónica (956 05 52 43) o mejor:
+  impreso llevado a mano a Luis Mazantini 37 (eres local,
+  es una gestoría — la gente entra y sale a todas horas)
+- ✓ TONO: técnico-defensivo, sin vender nada en el primer
+  contacto. El mensaje es: "he detectado algo que puede
+  tirarles el negocio, lo tengo documentado, se lo enseño
+  gratis"
 
-"Hola, buenas tardes. Soy Juan, hago webs y
-automatizaciones para negocios de la Bahía
-(tengo varios clientes en El Puerto).
+## 📞 EL GUION DE LA LLAMADA
 
-Le escribo porque vi que estáis SEGUNDOS en
-Google para "asesoría El Puerto de Santa
-María" — bien ahí, mejor que la mayoría de
-la ciudad.
+"(Nombre). Buenos días, soy Juan, trabajo en webs y Google
+en la Bahía. Le llamo por algo serio y concreto sobre su
+web acpuerto.com — no es una llamada comercial, es un aviso.
 
-Y justamente por eso me llamó la atención
-otra cosa: esa posición está llevando visitas
-a una web de una sola página, sin precios,
-sin WhatsApp y sin estadísticas instaladas.
-Estáis captando la búsqueda más valiosa de
-vuestra ciudad... y no midiendo ni capturando
-lo que entra.
+Su web está en las mejores posiciones de Google para
+'asesoría El Puerto' — sé lo que vale eso. Pues bien: el
+archivo técnico que Google lee de su web (el sitemap)
+está declarando CASI MIL PÁGINAS de contenido de casino
+y apuestas que no son suyas — ruleta, tragaperras, apuestas
+deportivas, en un montón de idiomas. Es lo que se llama
+spam inyectado o hacked content.
 
-Y el segundo tema, el que más me gusta: las
-asesorías pierden horas de equipo en tareas
-repetitivas de cada cliente (avisos de
-trimestral, recoger documentación, estados
-de expediente). Eso se automatiza — y en una
-asesoría con vuestro volumen, el ahorro se
-ve el primer mes.
+Mientras eso esté ahí, Google puede penalizar el dominio
+ENTERO en cualquier momento — y perderían esa posición
+de Google de un día para otro, sin aviso.
 
-¿Le interesa que le enseñe con 2-3 ejemplos
-concretos cómo quedaría en vuestro caso? Sin
-compromiso."
+Lo tengo todo documentado con capturas. ¿Se la puedo
+enseñar? Tarda 5 minutos y se lo explico sin tecnicismos."
 
-## 📋 LOS 3 HALLAZGOS (si responden que sí)
+## 📋 LA CARPETA DE EVIDENCIA (preparar ANTES de llamar)
+1. Captura del sitemap declarando las 991 URLs
+   (acpuerto.com/sitemap.xml en el navegador)
+2. Captura de 2-3 URLs de casino ABRIENDO en vivo
+   (200 OK — demuestra que están activas ahora mismo)
+3. Captura de su posición top-2 en "asesoría El Puerto"
+   ("esto es lo que se pierde")
+4. Explicación de 1 página: qué es hacked content, qué
+   hace Google con ello (manual actions), cómo se limpia
 
-1. **El top-2 con la web más vacía de la SERP**
-   [captura de su web + la SERP] — "Estáis segundos en la búsqueda
-   principal de vuestra ciudad: la posición es perfecta. Pero el
-   visitante llega a una página de 357 palabras sin precios, sin
-   WhatsApp y sin forms de presupuesto. Las gestorías online
-   nacionales captan esos mismos buscadores con tarifas visibles
-   y presupuestadores automáticos. El tráfico ya lo tenéis — lo
-   que falta es el sistema que lo convierta en altas."
+## 💰 LA OFERTA (cuando hayan visto la evidencia)
 
-2. **Las horas de equipo que se van en repetir** (la automatización)
-   — "cada trimestre: aviso a X clientes de IVA, recoger documentación
-   uno a uno, avisar de presentación. Todo eso es un mensaje
-   automático por WhatsApp con plantilla + un estado de expediente
-   compartido. Horas de equipo al mes convertidas en minutos."
+**El rescate: 500€ (pago único)**
+- Limpieza completa: eliminar/404 de las ~1.000 páginas
+  de casino, revisar plugins/usuarios comprometidos,
+  cambiar credenciales
+- Requerimiento de reconsideración ante Google si hay
+  penalización activa
+- Hardening: cerrar la puerta por donde entraron
+- Informe de limpieza para su tranquilidad
 
-3. **No saben cuántas altas les trae la web** (sin analytics)
-   — "estando top-2, cada mes entra gente buscando exactamente lo
-   que vendéis... y no se puede saber cuántos son ni cuántas altas
-   generan. Instalar la medición es lo primero — gratis al contratar
-   cualquier servicio."
+**Mantenimiento de seguridad + la web que merecen:**
+- 40€/mes: monitorización, backups, actualizaciones
+- (opcional, después): web renovada con contenido de
+  asesoría (600€) — pero SOLO después de limpiar
 
-## 💰 LA OFERTA (escalonada — asesoría = presupuesto ajustado pero cliente fiel)
+Frase de cierre: "No les estoy vendiendo marketing.
+Les estoy diciendo que hay una bomba en su web que
+puede borrarles de Google, la tengo documentada, y
+la sé desactivar. Eso es todo."
 
-**PASO 1 · Auditoría web + procesos: 150€** (puerta — descontable)
-"72 horas: qué búsquedas de gestoría en El Puerto estáis perdiendo +
-la lista de procesos automatizables de vuestra asesoría con el ahorro
-estimado de horas."
+## 🎯 POR QUÉ ES LA VENTA MÁS FÁCIL DEL PORTFOLIO
+- El dueño de una asesoría entiende de riesgo y conformidad
+  (vive de ello) — "pueden desindexar el dominio" le suena
+  a "hacienda te multa": necesita solución YA
+- La evidencia es visual e inmediata (no hay que convencer
+  de nada abstracto)
+- No hay competencia ni negociación: quien detecta el
+  problema con evidencia, lo arregla
+- Y si su top-2 se cae ANTES de que acepten... tu llamada
+  del día siguiente es la más fácil del mundo: "lo que le
+  avisé el día X — puedo recuperar la posición, pero
+  conviene empezar hoy"
 
-**PASO 2 · Automatización de avisos (la primera): 150-300€**
-- avisos automáticos de trimestral/IRPF por WhatsApp a los clientes
-- estado de documentación pendiente compartido
-
-**PASO 3 · Web renovada con contenidos: 600€**
-- las 15-20 páginas que captan ("constitución SL El Puerto",
-  "alta autónomo El Puerto", "herencias gestoría El Puerto"...)
-- con analytics para medir las altas
-
-**PASO 4 · el BONUS B2B (por qué este lead vale doble):**
-"Vuestros propios clientes autónomos necesitan esto mismo
-(facturas automáticas, avisos de citas). Si os funciona,
-podéis ofrecerlo como servicio vuestro — os monto la versión
-blanca y entráis vosotros en el negocio digital con vuestros
-clientes."
-
-Frase de cierre: "Una asesoría que automatiza avisos y muestra
-precios claros en la web quita clientes a las gestorías online
-nacionales EN SU PROPIA CIUDAD. El know-how lo tenéis vosotros
-desde hace años — lo que falta es que se vea y funcione solo."
-
-## ⏰ TIMING
-- Martes-jueves 9:00-11:00 (después de la apertura, antes de las
-  llamadas de clientes)
-- OJO enenero y mayo: sus picos de trabajo (IRPF, trimestres) —
-  contactar entre picos (ahora, finales de noviembre, es perfecto:
-  entre el T3 y el cierre de año)
+## 📌 NOTA DE ÉTICA (la que define cómo hacerlo)
+El objetivo es SACARLES DE ESE PROBLEMA, no asustarlos
+para vender. Si al ver la evidencia deciden arreglarlo
+con su propio informático: perfecto — deseles la carpeta
+de evidencia igualmente. El mercado local se acuerda de
+quien avisa de la bomba aunque no compre la desactivación.
+(De hecho: esa llamada te posiciona como EL técnico
+local de webs para los próximos años en El Puerto.)
