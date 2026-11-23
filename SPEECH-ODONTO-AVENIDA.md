@@ -113,3 +113,17 @@ Agenda de 15 minutos:
 - MENCIONAR que Bucalclinic y AC Puerto ya están en proceso de
   arreglo conmigo (verdadero: ambos contactados) — no es que
   "pueda pasar": está pasando en la Bahía AHORA
+
+---
+## 📅 LOG (24-nov)
+ENVIADO por WhatsApp al 660 42 91 90.
+PLAN DE SEGUIMIENTO:
+- 48h sin respuesta → 1 follow-up corto: "¿Pudo ver mi mensaje?
+  La revisión de su web tarda 2 minutos y se la enseño sin
+  compromiso — sobre todo el tema Revolution Slider"
+- Si piden la prueba → capturas del "WordPress 4.8" en su código
+  fuente + los 2 casos de la Bahía
+- SI CONTRATAN el blindaje 400€ → ejecutar con método: backup
+  previo completo ANTES de actualizar nada (9 años de
+  actualizaciones se aplican escalonado: 4.8→5.x→6.x comprobando
+  cada salto)
