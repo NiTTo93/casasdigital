@@ -18,23 +18,34 @@ cada cliente?"
 
 ## 📱 EL MENSAJE DE WHATSAPP (al 956 05 52 43)
 
-"Hola, buenas tardes. Soy Juan, hago webs y automatizaciones para
-negocios de la Bahía (tengo varios clientes en El Puerto).
+"Hola, buenas tardes. Soy Juan, hago webs y
+automatizaciones para negocios de la Bahía
+(tengo varios clientes en El Puerto).
 
-Le escribo porque vi su web (acpuerto.com) y una cosa me llamó la
-atención: estáis en una de las asesorías más visibles de El Puerto
-pero la web tiene muy poco contenido — y en el sector asesoría, las
-búsquedas ('gestoría autónomos El Puerto', 'asesoría fiscal online')
-las están captando las gestorías ONLINE nacionales con webs llenas
-de contenido y presupuestos automáticos.
+Le escribo porque vi que estáis SEGUNDOS en
+Google para "asesoría El Puerto de Santa
+María" — bien ahí, mejor que la mayoría de
+la ciudad.
 
-Y por otro lado, el tema que más me gusta: las gestorías que conozco
-pierden horas de equipo en tareas repetitivas de cada cliente (avisos
-de trimestral, recoger documentación, estados de expediente...). Eso
-se automatiza.
+Y justamente por eso me llamó la atención
+otra cosa: esa posición está llevando visitas
+a una web de una sola página, sin precios,
+sin WhatsApp y sin estadísticas instaladas.
+Estáis captando la búsqueda más valiosa de
+vuestra ciudad... y no midiendo ni capturando
+lo que entra.
 
-¿Le interesa que le enseñe con 2-3 ejemplos concretos cómo quedaría
-en su caso? Sin compromiso."
+Y el segundo tema, el que más me gusta: las
+asesorías pierden horas de equipo en tareas
+repetitivas de cada cliente (avisos de
+trimestral, recoger documentación, estados
+de expediente). Eso se automatiza — y en una
+asesoría con vuestro volumen, el ahorro se
+ve el primer mes.
+
+¿Le interesa que le enseñe con 2-3 ejemplos
+concretos cómo quedaría en vuestro caso? Sin
+compromiso."
 
 ## 📋 LOS 3 HALLAZGOS (si responden que sí)
 
