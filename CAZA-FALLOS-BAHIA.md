@@ -28,18 +28,27 @@ Cleardent · Abogados AGA
 
 # 🚨 CAZA AMPLIADA (23-nov ~19:30) — 2 NUEVOS LEADS DE RESCATE
 
-## 1 · BUCALCLINIC (Cádiz/Sevilla) — HACKED CONFIRMADO 🚨🚨
+## 1 · BUCALCLINIC (Cádiz/Sevilla) — HACKED CONFIRMADO (verificado a fondo 23-nov noche)
 - bucalclinic.com — clínica dental con centros en Cádiz, Sevilla y Ceuta
 - Dominio desde 2011 (IONOS) — negocio real con años de rodaje
-- **SPAM FARMACÉUTICO INYECTADO en la home**: "sildenafil precio"
-  incrustado ENTRE el texto legítimo de la clínica ("...es lo que
-  nos diferencia en Bucalclinic. **sildenafil precio**")
-- 🚨🚨 EL TELÉFONO DE LA WEB ES 999999999 (falso/reemplazado!)
-  = los clientes potenciales llaman a un número inexistente
-- Sin formularios de contacto (0) · sin meta description · HTTP sin SSL
-- WordPress con sitemap users EXPUESTO (fuga del usuario hosting...)
-- VEREDICTO: hackeo farmacéutico + teléfono destruido = lead de
-  rescate INMEDIATO (cada día sin teléfono real = pacientes perdidos)
+- **SPAM FARMACÉUTICO OCULTO CONFIRMADO** (verificado con render):
+  el texto "sildenafil precio" está en el DOM con font 36px,
+  opacity 1... PERO dentro de un contenedor con
+  `position:absolute; left:-15609px` = FUERA DE PANTALLA
+  (técnica cloaking: invisible para humanos, visible para Google)
+  Prueba para mostrarles: ver código fuente → Ctrl+F "sildenafil"
+- SOLO la home está infectada (el resto de las 13 páginas limpias)
+- ❌ CORRECCIONES (falsos positivos míos, verificados):
+  · el "teléfono 999999999" NO EXISTE (eran valores CSS z-index
+    y headers rate-limit — precipitación al interpretar regex)
+  · el SSL está BIEN (https 200 válido + http redirige 301;
+    mi "sin SSL" venía del sitemap interno con URLs http viejas)
+  · "cialis" era falso positivo (espeCIALIStas) y "dose" del
+    aviso legal también (incluyénDOSE, limitánDOSE — español!)
+- ⚠️ menores: sin meta description · sitemap interno con URLs http
+- VEREDICTO REAL: hacked content oculto grave ante Google, SOLO
+  en la home, limpiable rápido. Pitch: cloaking farmacéutico +
+  demo del código fuente delante de ellos
 
 ## 2 · ODONTO AVENIDA (Chiclana) — BOMBA DE RELÓJERÍA ⏳
 - odontoavenida.com — clínica dental centro de Chiclana
