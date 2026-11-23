@@ -184,3 +184,31 @@ TUS leads del pipeline (3 hackeados + PEYMA caída).
    Sevilla capital / Cádiz interior (Arcos, Medina) / Costa
    Ballena-Chiclana Playa (hoteles y chiringuitos con webs
    viejas de temporada).
+
+---
+# 🔄 ACTUALIZACIÓN PEYMA (24-nov, dato de Juan)
+PEYMA ya NO es la web caída: su web actual es **MF ODONTOLOGÍA**
+(mfodontologia.es) — clínica dental Jerez, web NUEVA en Wix.
+
+## SITUACIÓN REAL DEL LEAD (re-verificada)
+✓ Web nueva Wix funcionando, sitemap OK, analytics SÍ
+✓ 1.483 palabras en home
+⚠️ FALLOS REALES VENDIBLES:
+1 · peymadental.com (el dominio histórico que posicionaba)
+   SIGUE MUERTO en modo mantenimiento SIN redirigir a la
+   nueva — toda su autoridad/posiciones de Google se están
+   PERDIENDO (el dominio viejo no transfiere nada a la nueva)
+2 · 0 menciones de PEYMA en la nueva web: los pacientes que
+   buscaban "PEYMA dental Jerez" (marca con años de historia)
+   no encuentran conexión con la nueva marca
+3 · Wix con 5,8MB en la home (excesivo; el móvil lo sufre)
+4 · sin canonical en la home
+
+## NUEVO PITCH (recuperación, no rescate):
+"Su dominio antiguo (PEYMA) sigue en pie muerto y no redirige
+a la nueva web — Google ve dos webs separadas: la vieja
+(muerta, con toda la historia y posiciones) y la nueva (sin
+historial). Cada día así, la posición que PEYMA construyó en
+Jerez se evapora. Se arregla en 1 día: redirección 301 +
+migración de señal + actualizar Google Business."
+OFERTA: recuperación de posicionamiento 300€ + mantenimiento.
