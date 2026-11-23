@@ -66,3 +66,23 @@ Cleardent · Abogados AGA
 1. BUCALCLINIC — urgencia máxima (teléfono falso YA les cuesta pacientes)
 2. AC PUERTO — seguimiento de la llamada pendiente
 3. ODONTO AVENIDA — preventivo con caso real de la zona
+
+---
+## 📅 LOG BUCALCLINIC (23-nov noche)
+CONTACTADO por Juan. Pendiente respuesta.
+PLAN DE SEGUIMIENTO:
+- Si no contestan en 48h → 1 follow-up corto por el mismo canal:
+  "¿Pudo ver lo del código fuente? La prueba se hace en 10
+  segundos — le enseño dónde está el texto oculto cuando quiera,
+  sin compromiso"
+- SI PIDEN PRUEBA → mandar captura del código fuente con el
+  "sildenafil precio" resaltado + la explicación de left:-15609px
+  en lenguaje llano (el PDF de AC Puerto sirve de plantilla —
+  hacer versión Bucalclinic de 1 página si piden presupuesto)
+- OFERTA RECOMENDADA: limpieza 300-400€ (1 sola página infectada)
+  + 95€/mes mantenimiento (vigilancia = lo que habría detectado
+  esto hace meses)
+LECCIÓN DEL PROCESO (para próximos pitches): siempre verificar
+con render + contexto antes de afirmar fallos. El pitch de
+Bucalclinic es sólido SOLO con el dato del cloaking (que es
+real y demostrable con el código fuente).
