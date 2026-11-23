@@ -111,3 +111,18 @@ de evidencia igualmente. El mercado local se acuerda de
 quien avisa de la bomba aunque no compre la desactivación.
 (De hecho: esa llamada te posiciona como EL técnico
 local de webs para los próximos años en El Puerto.)
+
+---
+## 📅 LOG (23-nov-2026 ~18:30)
+Llamadas realizadas. Respuesta: "estamos con un cliente liados,
+te llamamos ahora, muchas gracias" — NO CERRADO: pendiente de su
+llamada de vuelta. SI NO LLAMAN EN 24H (martes ~11:00):
+- 1 llamada de seguimiento corta: "Le llamé ayer por el tema de
+  su web, quería saber si le interesa que le enseñe la carpeta
+  de evidencia — 5 minutos y le dejo tranquilo"
+- Alternativa: pasarse por la oficina físicamente (Luis Mazantini
+  37) con la carpeta impresa — el rescate se vende mejor cara a
+  cara con las capturas delante
+SI NO HAY RESPUESTA EN 72H: la web de casino sigue viva y su
+riesgo sigue creciendo — una última visita presencial y se
+descarta (no perseguir más).
