@@ -60,6 +60,39 @@
   ]
 }
 </script>
+
+  <style>
+    /* Diagnóstico exprés — usa las vars del sitio, no toca style.css */
+    .dx{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:start;margin-top:8px}
+    .dx-panel{background:var(--dark-3);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:28px}
+    .dx-q{padding:16px 0;border-bottom:1px solid rgba(255,255,255,.07)}
+    .dx-q:last-of-type{border-bottom:none}
+    .dx-q p{margin:0 0 10px;font-weight:600;color:var(--white);font-size:.98rem}
+    .dx-q small{display:block;color:var(--gray);font-weight:400;margin-top:2px}
+    .dx-opts{display:flex;flex-wrap:wrap;gap:8px}
+    .dx-opt{cursor:pointer}
+    .dx-opt input{position:absolute;opacity:0;pointer-events:none}
+    .dx-opt span{display:inline-block;padding:8px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.14);font-size:.85rem;color:var(--gray-light);transition:all .15s}
+    .dx-opt input:checked + span{background:var(--accent);border-color:var(--accent);color:#fff}
+    .dx-opt input:focus-visible + span{outline:2px solid var(--accent);outline-offset:2px}
+    .dx-result{position:sticky;top:24px;background:var(--dark-2);border:1px solid rgba(79,125,249,.35);border-radius:var(--radius);padding:28px;color:var(--white);box-shadow:0 0 0 1px rgba(79,125,249,.08),0 20px 60px -20px var(--accent-glow)}
+    .dx-result.is-locked{background:var(--dark-3);border:1px dashed rgba(255,255,255,.18);color:var(--gray);box-shadow:none}
+    .dx-badge{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:var(--accent-glow);color:var(--accent);padding:5px 10px;border-radius:999px;margin-bottom:12px}
+    .dx-score{font-size:clamp(2.6rem,5vw,3.4rem);font-weight:700;letter-spacing:-2px;line-height:1;color:var(--accent)}
+    .dx-score small{color:var(--gray)}
+    .dx-score small{font-size:1.1rem;font-weight:500;opacity:.8;letter-spacing:0}
+    .dx-verdict{margin:10px 0 18px;font-size:1rem;font-weight:600}
+    .dx-gaps{margin:0;padding:0;list-style:none}
+    .dx-gaps li{display:flex;gap:10px;padding:10px 0;border-top:1px solid rgba(255,255,255,.08);font-size:.92rem;line-height:1.55;color:var(--gray-light)}
+    .dx-gaps li::before{content:'!';flex-shrink:0;width:20px;height:20px;border-radius:50%;background:var(--accent-glow);color:var(--accent);border:1px solid rgba(79,125,249,.4);display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:.75rem;margin-top:1px}
+    .dx-note{font-size:.82rem;color:var(--gray);margin:16px 0 18px;line-height:1.5}
+    .dx-note a{color:var(--gray-light)}
+    .dx-cta{display:block;width:100%;justify-content:center;text-align:center}
+    .dx-hint{font-size:.78rem;color:var(--gray);margin-top:14px;text-align:center}
+    .dx-result.is-locked .dx-score{color:var(--gray-light)}
+    .dx-result.is-locked .dx-badge{background:rgba(255,255,255,.08);color:var(--gray)}
+    @media (max-width:900px){.dx{grid-template-columns:1fr}.dx-result{position:static}}
+  </style>
 </head>
 <body>
 
@@ -89,6 +122,7 @@
     <a href="https://wa.me/34610304263" class="btn btn--outline" target="_blank">💬 Preguntar por WhatsApp</a>
   </div>
 </div>
+  <p style="margin-top:18px;font-size:.95rem;color:var(--gray)">¿Prefieres empezar gratis? <a href="#diagnostico" style="color:var(--accent);font-weight:600;text-decoration:underline">Haz el diagnóstico exprés de 60 segundos →</a></p>
 </section>
 
 <section class="section section--dark">
@@ -275,6 +309,71 @@
 </div>
 </section>
 
+<section class="section" id="diagnostico">
+<div class="container">
+  <span class="section__tag">Diagnóstico exprés</span>
+  <h2 class="section__title">¿Cómo está tu web realmente? Descúbrelo en 60 segundos</h2>
+  <p class="section__sub">Responde estas 8 preguntas sobre tu web y tu presencia en Google. Te doy una puntuación y las 3 carencias que más te están costando clientes. Sin registro, sin tecnicismos.</p>
+
+  <div class="dx">
+    <div class="dx-panel" id="dx-panel">
+      <div class="dx-q"><p>1. ¿Tienes web propia? <small>(no solo Instagram o Facebook)</small></p>
+        <div class="dx-opts"><label class="dx-opt"><input type="radio" name="q1" value="1" data-w="12"><span>Sí</span></label><label class="dx-opt"><input type="radio" name="q1" value="0" data-w="12" data-gap="Sin web propia: dependes 100% de redes de terceras"><span>No</span></label></div></div>
+      <div class="dx-q"><p>2. ¿Tu web carga rápido en el móvil? <small>(se ve en menos de 3 segundos)</small></p>
+        <div class="dx-opts"><label class="dx-opt"><input type="radio" name="q2" value="1" data-w="8"><span>Sí</span></label><label class="dx-opt"><input type="radio" name="q2" value="0.4" data-w="8"><span>Regular</span></label><label class="dx-opt"><input type="radio" name="q2" value="0" data-w="8" data-gap="Web lenta en móvil: Google te baja y el cliente se va"><span>No / no lo sé</span></label></div></div>
+      <div class="dx-q"><p>3. ¿Tienes el perfil de Google Business Profile? <small>(lo que sale en el mapa)</small></p>
+        <div class="dx-opts"><label class="dx-opt"><input type="radio" name="q3" value="1" data-w="14"><span>Sí, verificado y actualizado</span></label><label class="dx-opt"><input type="radio" name="q3" value="0.5" data-w="14"><span>Existe pero abandonado</span></label><label class="dx-opt"><input type="radio" name="q3" value="0" data-w="14" data-gap="Sin Google Business Profile activo: invisible en el mapa local"><span>No</span></label></div></div>
+      <div class="dx-q"><p>4. ¿Cuántas reseñas tienes en Google?</p>
+        <div class="dx-opts"><label class="dx-opt"><input type="radio" name="q4" value="1" data-w="12"><span>Más de 50</span></label><label class="dx-opt"><input type="radio" name="q4" value="0.6" data-w="12"><span>Entre 10 y 50</span></label><label class="dx-opt"><input type="radio" name="q4" value="0" data-w="12" data-gap="Pocas reseñas en Google: pierdes contra la competencia cercana"><span>Menos de 10</span></label></div></div>
+      <div class="dx-q"><p>5. Cuando buscas en Google «tu negocio + tu ciudad», ¿sales en la primera página?</p>
+        <div class="dx-opts"><label class="dx-opt"><input type="radio" name="q5" value="1" data-w="16"><span>Sí, arriba</span></label><label class="dx-opt"><input type="radio" name="q5" value="0.5" data-w="16"><span>A veces</span></label><label class="dx-opt"><input type="radio" name="q5" value="0" data-w="16" data-gap="No apareces por tu negocio + ciudad: ahí están tus clientes"><span>No</span></label></div></div>
+      <div class="dx-q"><p>6. ¿Tu web tiene contenido útil? <small>(blog, guías, precios, casos)</small></p>
+        <div class="dx-opts"><label class="dx-opt"><input type="radio" name="q6" value="1" data-w="10"><span>Sí, publico con asiduidad</span></label><label class="dx-opt"><input type="radio" name="q6" value="0.5" data-w="10"><span>Algo, sin constancia</span></label><label class="dx-opt"><input type="radio" name="q6" value="0" data-w="10" data-gap="Sin contenido útil: ninguna página responde a lo que busca tu cliente"><span>No</span></label></div></div>
+      <div class="dx-q"><p>7. ¿Sabes cuántas personas te encuentran en Google cada mes?</p>
+        <div class="dx-opts"><label class="dx-opt"><input type="radio" name="q7" value="1" data-w="8"><span>Sí, lo mido</span></label><label class="dx-opt"><input type="radio" name="q7" value="0" data-w="8" data-gap="Sin Search Console: vas a ciegas"><span>No</span></label></div></div>
+      <div class="dx-q"><p>8. ¿Tu web está adaptada a móvil y es segura (https)?</p>
+        <div class="dx-opts"><label class="dx-opt"><input type="radio" name="q8" value="1" data-w="8"><span>Sí</span></label><label class="dx-opt"><input type="radio" name="q8" value="0.3" data-w="8"><span>No estoy seguro</span></label><label class="dx-opt"><input type="radio" name="q8" value="0" data-w="8" data-gap="Web no adaptada o no segura: base técnica insuficiente"><span>No</span></label></div></div>
+    </div>
+
+    <div class="dx-result is-locked" id="dx-result" aria-live="polite">
+      <div class="dx-badge">Tu diagnóstico</div>
+      <div class="dx-score"><span id="dx-num">—</span><small>/100</small></div>
+      <div class="dx-verdict" id="dx-verdict">Responde las 8 preguntas para ver tu resultado</div>
+      <ul class="dx-gaps" id="dx-gaps"></ul>
+      <p class="dx-note" id="dx-note" hidden>Puntuación orientativa basada en los 8 factores que más pesan en el SEO local. El diagnóstico completo, con datos reales de tu web, es la <a href="#diagnostico" style="color:#fff;text-decoration:underline">auditoría de 150€</a>.</p>
+      <a href="#dx-form" class="btn btn--primary dx-cta" id="dx-cta" hidden>Quiero que lo revisemos →</a>
+      <p class="dx-hint" id="dx-hint">Faltan <b>8</b> respuestas</p>
+    </div>
+  </div>
+
+  <div class="dx" id="dx-form" style="margin-top:48px;scroll-margin-top:100px">
+    <div>
+      <h3 class="section__title" style="font-size:1.6rem;margin-bottom:12px">¿Quieres que revise tu caso personalmente?</h3>
+      <p class="section__sub" style="margin-bottom:24px">Déjame tu web y tu teléfono y te digo, sin coste, si el diagnóstico exprés coincide con lo que veo en tu web real. Si tiene sentido te paso el presupuesto de la auditoría completa (150€) y cómo se aplica al plan de mantenimiento.</p>
+      <ul class="check-list">
+        <li>Revisión manual de tu web en menos de 24 h</li>
+        <li>Sin compromiso ni llamada comercial</li>
+        <li>Respuesta por WhatsApp o email, tú eliges</li>
+      </ul>
+    </div>
+    <div class="dx-panel">
+      <form class="form" action="https://forms.reformaschiclana.es/webform" method="POST" id="dx-lead">
+        <input type="hidden" name="site" value="casasdigital">
+        <input type="hidden" name="_next" value="https://casasdigital.es/contacto-gracias.html">
+        <input type="hidden" name="_subject" value="Diagnóstico exprés desde casasdigital.es">
+        <div class="form__group"><input type="text" name="nombre" placeholder="Tu nombre *" required></div>
+        <div class="form__group"><input type="tel" name="telefono" placeholder="Teléfono *" required></div>
+        <div class="form__group"><input type="url" name="web" placeholder="URL de tu web *" required></div>
+        <div class="form__group"><input type="text" name="ciudad" placeholder="Tu ciudad (Cádiz, Jerez, Chiclana...)"></div>
+        <div class="form__group"><textarea name="mensaje" id="dx-msg" rows="4" placeholder="¿Qué te preocupa? (opcional)"></textarea></div>
+        <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center">Quiero mi revisión gratis →</button>
+        <p class="form__legal">Al enviar aceptas la <a href="politica-privacidad.html">política de privacidad</a>.</p>
+      </form>
+    </div>
+  </div>
+</div>
+</section>
+
 <section class="section">
 <div class="container">
   <p class="section__tag">Preguntas frecuentes</p>
@@ -360,6 +459,62 @@ const nav=document.getElementById('nav');
 window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>50)});
 const hb=document.getElementById('hamburger');
 if(hb)hb.addEventListener('click',function(){const nl=document.getElementById('navLinks');nl.style.display=nl.style.display==='flex'?'none':'flex'});
+</script>
+
+<script>
+(function () {
+  var total = 8, result = document.getElementById('dx-result');
+  var VERDICTS = [
+    [40, 'Tu presencia en Google está en rojo'],
+    [60, 'Base insuficiente: estás perdiendo clientes'],
+    [80, 'Vas bien, pero hay hueco importante'],
+    [101, 'Buena base. Ahora toca afinar']
+  ];
+  function calc() {
+    var score = 0, max = 0, gaps = [], answered = 0;
+    var groups = {};
+    document.querySelectorAll('#dx-panel input[type=radio]').forEach(function (r) {
+      if (r.checked) {
+        groups[r.name] = r;
+      }
+    });
+    answered = Object.keys(groups).length;
+    document.getElementById('dx-hint').innerHTML = answered === total ? 'Diagnóstico completo' : 'Faltan <b>' + (total - answered) + '</b> respuestas';
+    if (answered < total) {
+      result.classList.add('is-locked');
+      document.getElementById('dx-num').textContent = '—';
+      document.getElementById('dx-verdict').textContent = 'Responde las ' + total + ' preguntas para ver tu resultado (' + answered + '/' + total + ')';
+      document.getElementById('dx-gaps').innerHTML = '';
+      document.getElementById('dx-note').hidden = true;
+      document.getElementById('dx-cta').hidden = true;
+      return;
+    }
+    for (var name in groups) {
+      var r = groups[name]; var w = parseFloat(r.dataset.w);
+      max += w; score += w * parseFloat(r.value);
+      if (r.dataset.gap) gaps.push({ gap: r.dataset.gap, w: w });
+    }
+    score = Math.round(score / max * 100);
+    gaps.sort(function (a, b) { return b.w - a.w; });
+    var verdict = VERDICTS.find(function (v) { return score < v[0]; })[1];
+    document.getElementById('dx-num').textContent = score;
+    document.getElementById('dx-verdict').textContent = verdict;
+    document.getElementById('dx-gaps').innerHTML = gaps.slice(0, 3).map(function (g) { return '<li>' + g.gap + '</li>'; }).join('')
+      || '<li style="--c:green">Sin carencias graves: revisar detalles finos</li>';
+    document.getElementById('dx-note').hidden = false;
+    document.getElementById('dx-cta').hidden = false;
+    result.classList.remove('is-locked');
+    var msg = document.getElementById('dx-msg');
+    if (!msg.dataset.touched) {
+      msg.value = 'Diagnóstico exprés: ' + score + '/100 · ' + verdict + (gaps.length ? ' · Carencias: ' + gaps.slice(0, 3).map(function (g) { return g.gap.split(':')[0]; }).join(' | ') : '');
+    }
+  }
+  document.getElementById('dx-panel').addEventListener('change', calc);
+  document.getElementById('dx-msg').addEventListener('input', function (e) { e.target.dataset.touched = '1'; });
+  document.getElementById('dx-cta').addEventListener('click', function () {
+    setTimeout(function () { document.querySelector('#dx-form input[name=nombre]').focus(); }, 400);
+  });
+})();
 </script>
 </body>
 </html>
