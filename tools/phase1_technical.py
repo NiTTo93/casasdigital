@@ -48,7 +48,7 @@ def localbiz(p):
 {area}
   ],
   "serviceType": ["SEO local", "Diseño web", "Auditoría SEO", "Google Business Profile", "Consultoría SEO", "Automatizaciones"],
-  "sameAs": ["https://www.linkedin.com/in/juan-casas-seo"],
+  "sameAs": ["https://www.linkedin.com/in/juanjesuscasas/"],
   "makesOffer": [
     {{"@type": "Offer", "itemOffered": {{"@type": "Service", "name": "Diseño web SEO", "url": "{SITE}diseno-web-seo.html"}}}},
     {{"@type": "Offer", "itemOffered": {{"@type": "Service", "name": "SEO local mensual", "url": "{SITE}seo-local.html"}}}},
@@ -142,6 +142,7 @@ def process(path):
 
 if __name__ == "__main__":
     pages = sorted(glob.glob("*.html") + glob.glob("blog/*.html"))
+    pages = [p for p in pages if p != "index.html"]  # index: schema propio (Person+FAQPage) -> tools/optimize_home_eeat.py
     changed = 0
     for p in pages:
         if p in ("contacto-gracias.html",):
