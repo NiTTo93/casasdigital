@@ -45,9 +45,9 @@ def conclusion_block(txt):
     return f'<div class="article-tip" style="margin-top:28px"><p style="color:var(--gray);line-height:1.8;margin:0">{txt}</p></div>'
 
 def table(headers, rows, cls="price-table"):
-    th = "".join(f"<th>{h}</th>" for h in headers)
-    trs = "".join("<tr>" + "".join(f"<td>{c}</td>" for c in r) + "</tr>" for r in rows)
-    return f'<table class="{cls}"><tr>{th}</tr>{trs}</table>'
+    th = "".join(f'<th scope="col">{h}</th>' for h in headers)
+    trs = "".join("<tr>" + f'<th scope="row">{r[0]}</th>' + "".join(f"<td>{c}</td>" for c in r[1:]) + "</tr>" for r in rows)
+    return f'<table class="{cls}"><thead><tr>{th}</tr></thead><tbody>{trs}</tbody></table>'
 
 def check_list(items):
     return '<ul class="check-list">' + "".join(f"<li>{i}</li>" for i in items) + "</ul>"

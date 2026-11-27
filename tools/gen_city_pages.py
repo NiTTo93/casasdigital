@@ -159,12 +159,12 @@ def seo_body(slug):
   <div class="two-col">
     <div>
       <table class="price-table">
-        <tr><th>Servicio</th><th>Desde</th><th>Qué incluye</th></tr>
-        <tr><td>Auditoría SEO</td><td>Gratis</td><td>Análisis de tu web y tu GBP, lista de fallos priorizados y plan a 90 días</td></tr>
-        <tr><td>SEO local mensual</td><td>150 €/mes</td><td>GBP, contenido local, enlaces internos, seguimiento mensual de posiciones</td></tr>
-        <tr><td>Diseño web + SEO</td><td>300 €</td><td>Web rápida, optimizada para búsquedas de {c['short']}, sin dominio ni hosting</td></tr>
-        <tr><td>Automatización / Agente IA</td><td>150 € / 450 €</td><td>Formularios que avisan al móvil, informes automáticos, agente de teléfono 24/7</td></tr>
-      </table>
+        <thead><tr><th scope="col">Servicio</th><th scope="col">Desde</th><th scope="col">Qué incluye</th></tr></thead><tbody>
+        <tr><th scope="row">Auditoría SEO</th><td>Gratis</td><td>Análisis de tu web y tu GBP, lista de fallos priorizados y plan a 90 días</td></tr>
+        <tr><th scope="row">SEO local mensual</th><td>150 €/mes</td><td>GBP, contenido local, enlaces internos, seguimiento mensual de posiciones</td></tr>
+        <tr><th scope="row">Diseño web + SEO</th><td>300 €</td><td>Web rápida, optimizada para búsquedas de {c['short']}, sin dominio ni hosting</td></tr>
+        <tr><th scope="row">Automatización / Agente IA</th><td>150 € / 450 €</td><td>Formularios que avisan al móvil, informes automáticos, agente de teléfono 24/7</td></tr>
+      </tbody></table>
     </div>
     <div>
       <p style="color:var(--gray);line-height:1.8;margin-bottom:16px">Los precios son «desde» porque dependen del número de URLs, de la competencia del sector en {c['short']} y del punto de partida de la web. La auditoría es gratuita y sin compromiso: te digo lo que hay antes de que decidas si seguimos.</p>
@@ -243,7 +243,7 @@ def dw_body(slug):
   <h1>{k['h1']}</h1>
   <p class="page-hero__sub">Páginas web rápidas, claras y preparadas para que Google te encuentre cuando alguien en {c['short']} busca lo que vendes. Desde 300 €, sin dominio ni hosting, y con la base SEO incluida desde el primer día.</p>
   <div class="hero__btns">
-    <a href="contacto.html" class="btn btn--primary">Pedir presupuesto →</a>
+    <a href="contacto.html" class="btn btn--primary">Pide presupuesto →</a>
     <a href="{WA}" class="btn btn--outline" target="_blank">💬 WhatsApp</a>
   </div>
 </div>
@@ -299,12 +299,12 @@ def dw_body(slug):
   <div class="two-col">
     <div>
       <table class="price-table">
-        <tr><th>Tipo de web</th><th>Desde</th><th>Ideal para</th></tr>
-        <tr><td>Landing de 1 página</td><td>300 €</td><td>Un servicio principal, campana de captación, lanzamiento</td></tr>
-        <tr><td>Web de 5-6 páginas</td><td>600 €</td><td>Negocio local con varios servicios, quieres posicionar en {c['short']}</td></tr>
-        <tr><td>Web + SEO mensual</td><td>600 € + 150 €/mes</td><td>Quieres que la web trabaje sola y te traiga llamadas cada mes</td></tr>
-        <tr><td>Reparación web Kit Digital</td><td>300 €</td><td>Ya tienes web, pero está abandonada y no posiciona</td></tr>
-      </table>
+        <thead><tr><th scope="col">Tipo de web</th><th scope="col">Desde</th><th scope="col">Ideal para</th></tr></thead><tbody>
+        <tr><th scope="row">Landing de 1 página</th><td>300 €</td><td>Un servicio principal, campana de captación, lanzamiento</td></tr>
+        <tr><th scope="row">Web de 5-6 páginas</th><td>600 €</td><td>Negocio local con varios servicios, quieres posicionar en {c['short']}</td></tr>
+        <tr><th scope="row">Web + SEO mensual</th><td>600 € + 150 €/mes</td><td>Quieres que la web trabaje sola y te traiga llamadas cada mes</td></tr>
+        <tr><th scope="row">Reparación web Kit Digital</th><td>300 €</td><td>Ya tienes web, pero está abandonada y no posiciona</td></tr>
+      </tbody></table>
     </div>
     <div>
       <p style="color:var(--gray);line-height:1.8;margin-bottom:16px">Todos los precios son «desde», sin dominio ni hosting. El presupuesto se cierra antes de empezar y no cambia salvo que tú cambies el alcance.</p>
@@ -343,7 +343,7 @@ def dw_body(slug):
   <h2>¿Quieres una web que te traiga clientes en {c['short']}?</h2>
   <p>Presupuesto cerrado, sin dominio ni hosting obligatorio, y con la base SEO incluida desde el primer día.</p>
   <div class="cta__btns">
-    <a href="contacto.html" class="btn btn--primary">Pedir presupuesto →</a>
+    <a href="contacto.html" class="btn btn--primary">Pide presupuesto →</a>
     <a href="{WA}" class="btn btn--outline" target="_blank">💬 WhatsApp directo</a>
   </div>
 </div>
@@ -365,6 +365,7 @@ def hub_body(kind):
         f'<div class="service"><div class="service__icon">{"📍" if is_seo else "🖥"}</div><h3><a href="{fn(s)}">{lab[s]}</a></h3>'
         f'<p>{CITIES[s]["pop"]}. {"SEO local, GBP y contenido por ciudad." if is_seo else "Webs rápidas con base SEO local, desde 300 €."}</p>'
         f'<div class="service__price">{CITIES[s]["name"]}</div></div>' for s in ORDER)
+    algeciras_note = '  <p style="color:var(--gray);font-size:.95rem;margin:16px 0 0">Fuera de la bahía también trabajo el <a href="seo-algeciras.html">SEO local en Algeciras y el Campo de Gibraltar</a>.</p>'
     faqs = [
         ("¿Cuál es la diferencia entre hacer SEO en Cádiz, Jerez o Chiclana?",
          "La intención y la competencia. En Cádiz capital y Jerez hay más volumen y más agencias; en San Fernando, Puerto Real, Chiclana y El Puerto hay menos volumen pero muchas menos webs trabajadas, y por eso se llega antes al top 3. La estrategia cambia por ciudad, el método es el mismo."),
@@ -387,7 +388,7 @@ def hub_body(kind):
   <h1>{h1}</h1>
   <p class="page-hero__sub">{"Una agencia para los seis municipios de la bahía. SEO local pensado para cómo busca la gente en Cádiz, Jerez, San Fernando, Chiclana, Puerto Real y El Puerto de Santa María, no una plantilla de ciudad genérica." if is_seo else "Webs rápidas y preparadas para Google en los seis municipios de la bahía. Desde 300 €, sin dominio ni hosting, con la base SEO de tu ciudad incluida."}</p>
   <div class="hero__btns">
-    <a href="contacto.html" class="btn btn--primary">{"Solicitar auditoría gratis →" if is_seo else "Pedir presupuesto →"}</a>
+    <a href="contacto.html" class="btn btn--primary">{"Pide tu auditoría gratis →" if is_seo else "Pedir presupuesto →"}</a>
     <a href="{WA}" class="btn btn--outline" target="_blank">💬 WhatsApp</a>
   </div>
 </div>
@@ -398,6 +399,7 @@ def hub_body(kind):
   <p class="section__tag">Seis municipios, seis búsquedas distintas</p>
   <h2 class="section__title">Elige tu ciudad</h2>
   <div class="services__grid" style="margin-top:24px">{cards}</div>
+{algeciras_note if is_seo else ''}
 </div>
 </section>
 
@@ -430,7 +432,7 @@ def hub_body(kind):
   <h2>{"¿Tu negocio no aparece en Google en tu municipio?" if is_seo else "¿Quieres una web que posicione en tu municipio?"}</h2>
   <p>{"Auditoría gratuita de tu web y tu Google Business Profile. Te enseño qué falla y qué resultados tienen otras webs de la bahía." if is_seo else "Presupuesto cerrado, sin dominio ni hosting, con la base SEO de tu ciudad incluida."}</p>
   <div class="cta__btns">
-    <a href="contacto.html" class="btn btn--primary">{"Solicitar auditoría gratis →" if is_seo else "Pedir presupuesto →"}</a>
+    <a href="contacto.html" class="btn btn--primary">{"Pide tu auditoría gratis →" if is_seo else "Pedir presupuesto →"}</a>
     <a href="{WA}" class="btn btn--outline" target="_blank">💬 WhatsApp directo</a>
   </div>
 </div>
