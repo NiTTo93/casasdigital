@@ -7,6 +7,14 @@ Reutiliza head/nav/footer de seo-chiclana.html (ya con schema Fase 1) y sustituy
 """
 import re, os, sys, json
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from content_render import *
+from content_seo_case import SEO_CASE
+from content_seo_serp import SEO_SERP
+from content_seo_common import SEO_PRICING_INTRO, SEO_PRICING, SEO_COMPARE_INTRO, SEO_COMPARE, SEO_FAQ_LONG
+from content_dw_audit import DW_AUDIT
+from content_dw_common import *
+from content_seo_plan import SEO_KW_INTRO, SEO_KW, SEO_PLAN_INTRO, SEO_PLAN
+from content_dw_extra import *
 from city_data import CITIES, FLEET, SITE, WA, TODAY, YEAR, kw_seo, kw_dw
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -91,8 +99,17 @@ def seo_body(slug):
          f"Sí, aunque donde más experiencia tengo es en servicios locales (reformas, climatización, plagas, electricidad), despachos profesionales (abogados, notarías), clínicas dentales y hostelería. Si tu sector es muy especializado, te lo digo en la auditoría antes de empezar."),
         (f"¿Haces SEO solo en {c['short']} o en toda la bahía?",
          "Trabajo en los seis municipios de la bahía: Cádiz, Jerez, San Fernando, Chiclana, Puerto Real y El Puerto de Santa María. Para cada uno tengo una página propia porque la búsqueda local cambia de una ciudad a otra, y para Google no es lo mismo."),
-    ]
+    ] + [(q.format(short=c['short'], name=c['name']), a.format(short=c['short'], name=c['name'])) for q, a in SEO_FAQ_LONG]
     sectors = "\n".join(f"<li>{s}</li>" for s in c["sectors"])
+    cs = SEO_CASE[slug]; sp = SEO_SERP[slug]
+    seo_new = (
+        section_dark("Caso real en la bahía", cs['title'], case_block(cs))
+        + section_light(f"Qué encuentra tu cliente en {c['short']}", f"Esto es lo que ve alguien que busca tu servicio en {c['short']} hoy", p(sp['intro']) + list_block(sp['items']) + conclusion_block(sp['conclusion']))
+        + section_light("Cuánto cuesta según tu negocio", "Precios de SEO por tipo de negocio en " + c['short'], p(SEO_PRICING_INTRO.format(short=c['short'])) + '<div style="overflow-x:auto">' + table(["Tipo de negocio", "SEO mensual desde", "Qué incluye"], SEO_PRICING) + '</div>')
+        + section_light("Búsquedas reales", f"Qué busca de verdad la gente de {c['short']} en Google, por sector", p(SEO_KW_INTRO.format(short=c['short'])) + '<div style="overflow-x:auto">' + table(["Sector", "Búsquedas que mueven tu negocio", "Cómo se gana"], [(a, b.format(short=c['short']), d.format(short=c['short'])) for a, b, d in SEO_KW]) + '</div>')
+        + section_dark("Plan a 90 días", "Qué pasa mes a mes si empezamos hoy", p(SEO_PLAN_INTRO) + list_block([(a, b.format(short=c['short'])) for a, b in SEO_PLAN]))
+        + section_dark("Comparativa", "Kit Digital, agencia típica o SEO con Casas Digital: qué cambia de verdad", p(SEO_COMPARE_INTRO.format(name=c['name']), last=True) + '<div style="overflow-x:auto">' + table(["", "Web del Kit Digital", "Agencia típica de la bahía", "SEO con Casas Digital"], [[r[0], r[1], r[2], r[3].format(short=c['short'])] for r in SEO_COMPARE[1:]]) + '</div>')
+    )
     angles = "\n".join(f'<h3 style="font-size:1.1rem;margin:28px 0 10px">{t}</h3>\n<p style="color:var(--gray);line-height:1.8;margin-bottom:8px">{b}</p>' for t, b in c["angles"])
     return f'''<section class="page-hero" style="padding-top: 120px;">
 <div class="container">
@@ -158,6 +175,8 @@ def seo_body(slug):
 </div>
 </section>
 
+{seo_new}
+
 <section class="section">
 <div class="container">
   <p class="section__tag">Cómo trabajo</p>
@@ -207,7 +226,15 @@ def dw_body(slug):
          "No. Publicar una web es el 20 %; el otro 80 % es SEO: contenido por servicio y por ciudad, Google Business Profile, citas locales y enlaces. Por eso todas las webs que hago ya salen con la base SEO montada, y el mantenimiento mensual es opcional pero recomendable."),
         (f"¿Trabajas con negocios de {c['short']} que ya tienen web?",
          f"Sí. Lo más habitual es que lleguen con una web del Kit Digital o de una agencia anterior que no posiciona. La reviso, te digo qué aprovecho y qué rehago, y te paso presupuesto por separado."),
-    ]
+    ] + [(q.format(short=c['short'], name=c['name']), a.format(short=c['short'], name=c['name'])) for q, a in DW_FAQ_LONG + DW_FAQ_EXTRA]
+    da = DW_AUDIT[slug]
+    dw_new = (
+        section_light("Lo que incluye", "Qué lleva una web hecha para posicionar en " + c['short'], p(DW_WHAT_INTRO, last=True) + check_list([w.format(short=c['short']) for w in (f"{a}: {b}" for a, b in DW_WHAT)]))
+        + section_dark("Técnica", DW_TECH_TITLE, p(DW_TECH_INTRO.format(short=c['short'])) + list_block([(a, b.format(short=c['short'])) for a, b in DW_TECH]))
+        + section_light("Qué página necesitas", "Cuántas páginas y cuáles, según lo que vendes en " + c['short'], p(DW_STRUCT_INTRO.format(short=c['short']), last=True) + '<div style="overflow-x:auto">' + table(["Tipo de negocio", "Tamaño recomendado", "Estructura y por qué"], [(a, b, d.format(short=c['short'])) for a, b, d in DW_STRUCT]) + '</div>')
+        + section_dark("Móvil", DW_MOBILE_TITLE.format(short=c['short']), p(DW_MOBILE_INTRO) + list_block([(a, b.format(short=c['short'])) for a, b in DW_MOBILE]))
+        + section_light("Comparativa", "Kit Digital, agencia de la bahía o web con Casas Digital", p(DW_COMPARE_INTRO.format(name=c['name']), last=True) + '<div style="overflow-x:auto">' + table(["", "Kit Digital", "Agencia de la bahía", "Casas Digital"], [[r[0], r[1], r[2], r[3].format(short=c['short'])] for r in DW_COMPARE[1:]]) + '</div>')
+    )
     angles = "\n".join(f'<h3 style="font-size:1.1rem;margin:28px 0 10px">{t}</h3>\n<p style="color:var(--gray);line-height:1.8;margin-bottom:8px">{b}</p>' for t, b in c["angles"])
     return f'''<section class="page-hero" style="padding-top: 120px;">
 <div class="container">
@@ -257,9 +284,13 @@ def dw_body(slug):
 <div class="container">
   <p class="section__tag">Por qué en {c['short']} la mayoría de webs no venden</p>
   <h2 class="section__title">Lo que veo al auditar webs de negocios de {c['short']}</h2>
-  {angles}
+  {p(da['intro'])}
+  {check_list(da['items'])}
+  {conclusion_block(da['conclusion'])}
 </div>
 </section>
+
+{dw_new}
 
 <section class="section section--dark">
 <div class="container">

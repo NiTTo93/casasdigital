@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+"""Fase 3 · SEO pages · búsquedas por sector y plan de 90 días."""
+
+SEO_KW_INTRO = "Antes de escribir una línea, miro qué busca de verdad la gente de {short} en Google y qué encuentra. Estas son las intenciones que más se repiten por sector, y las que suelo atacar primero:"
+SEO_KW = [
+    ("Servicios del hogar (reformas, plagas, climatización, electricidad, fontanería)", "«reformas {short}», «empresa de reformas en {short}», «fumigación {short} barata», «aire acondicionado {short} precio», «fontanero {short} urgente»", "Búsqueda de emergencia y de proximidad. Gana quien tiene página por servicio, GBP por zona y reseñas recientes. El precio se busca mucho: poner «desde» en la web filtra llamadas y mejora la conversión."),
+    ("Clínicas dentales, fisioterapia, estética", "«clínica dental {short}», «dentista {short} precio implante», «fisioterapia {short}», " if False else "«clínica dental {short}», «dentista {short} precio implante», «fisioterapia {short}», «limpieza dental {short}»", "Búsqueda con intención de presupuesto. Requiere página por tratamiento con precios orientativos, fotos propias y reseñas que mencionen el tratamiento. En la bahía el sector está en clara expansión."),
+    ("Despachos profesionales (abogados, notarías, gestorías)", "«abogado {short}», «abogado divorcios {short}», «notaría {short}», «gestoría {short} precio», " if False else "«abogado {short}», «abogado divorcios {short}», «notaría {short}», «gestoría {short} precio», «asesoría fiscal {short}»", "Búsqueda por materia y por confianza. Gana quien tiene página por materia con casos (sin datos), biografía del profesional y reseñas. El blog de preguntas frecuentes legales funciona muy bien."),
+    ("Comercio y hostelería", "«restaurantes en {short}», «dónde comer en {short}», «tiendas {short}», «horario [negocio]»", "Búsqueda desde el móvil y desde Maps. Aquí lo decisivo es el GBP (fotos, horarios, carta, reseñas) más una web rápida con la carta en HTML, no en PDF."),
+    ("Inmobiliarias y administración de fincas", "«inmobiliaria {short}», «piso en alquiler {short}», «comunidad de vecinos {short}», " if False else "«inmobiliaria {short}», «piso en alquiler {short}», «administrador de fincas {short}», «piso en venta zona [barrio]»", "Búsqueda por zona y por tipo de propiedad. Requiere páginas por zona y por tipo (alquiler, venta, obra nueva) y fichas de inmuebles que Google pueda leer."),
+    ("Formación y autoescuelas", "«autoescuela {short}», «academia de inglés {short}», «oposiciones {short}», " if False else "«autoescuela {short}», «academia de inglés {short}», «oposiciones {short}», «curso [tema] en {short}»", "Búsqueda estacional (septiembre y enero). Con página por curso, precios y convocatorias se captura todo el año, no solo la temporada."),
+]
+
+SEO_PLAN_INTRO = "Si hoy empezamos, esto es lo que va pasando mes a mes. Lo pongo por escrito porque me parece lo más honesto: el SEO no es un interruptor, es una secuencia."
+SEO_PLAN = [
+    ("Mes 1 · Base", "Auditoría a fondo de tu web y de tu GBP. Arreglo lo técnico que frena (velocidad, móvil, canonicals, schema). Trabajo el GBP: categorías, servicios, fotos y descripción con el nombre de {short}. Reescribo las páginas que ya tienes para las búsquedas principales."),
+    ("Mes 2 · Contenido", "Publico 4-6 páginas nuevas por servicio y por zona de {short}. Consigo los primeros enlaces locales (directorios de la bahía, asociaciones del sector, prensa local si aplica). Empiezo la campaña de reseñas con un enlace directo a tu ficha."),
+    ("Mes 3 · Autoridad y primeros resultados", "Las búsquedas de cola larga empiezan a aparecer en página 1-2. Amplio contenido a las preguntas que empiezan a salir en Search Console. Primer informe con capturas: impresiones, clics y posiciones por búsqueda."),
+    ("Meses 4-6 · Consolidar", "Las keywords principales («servicio + {short}») entran en top 10. Sigo con contenido, enlaces y reseñas. Ajusto lo que no mueve. Para entonces decides si seguimos con datos delante, no con promesas."),
+]
