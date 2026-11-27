@@ -464,3 +464,6 @@ a.btn--outline, .article-body a.btn--outline, .blog-cta a.btn--outline {
 .zones-sub{display:block;margin:28px 0 8px;font-size:1.05rem;font-weight:600;color:#fff}
 @media(max-width:1024px){.zones-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:768px){.zones-grid{grid-template-columns:1fr}}
+/* FAQ en home (h3 + p dentro de .faq__item) */
+.faq__item h3{font-size:1.05rem;font-weight:700;color:var(--white);margin:0 0 8px}
+.faq__item p{margin:0;color:var(--gray);font-size:.95rem;line-height:1.7}
