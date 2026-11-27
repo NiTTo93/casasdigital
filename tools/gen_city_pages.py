@@ -47,8 +47,12 @@ def shell(title, desc, canonical_path, body, faqs, trail, h1_for_breadcrumb=None
     return head + "</head>\n<body>\n" + nav + "\n" + body + "\n" + footer + "\n" + script + "\n</body>\n</html>\n"
 
 def breadcrumb(trail):
-    links = " › ".join(f'<a href="{u.replace(SITE, "")}">{n}</a>' for n, u in trail[:-1])
-    return f'<div class="breadcrumb"><a href="/">Inicio</a> › {links} › {trail[-1][0]}</div>' if len(trail) > 1 else '<div class="breadcrumb"><a href="/">Inicio</a></div>'
+    parts = ['<a href="/">Inicio</a>']
+    for n, u in trail[1:-1]:
+        parts.append(f'<a href="{u.replace(SITE, "")}">{n}</a>')
+    parts.append(trail[-1][0])
+    return '<div class="breadcrumb">' + " › ".join(parts) + '</div>'
+
 
 def faq_block(faqs):
     out = ['<div class="faq">']
@@ -95,7 +99,7 @@ def seo_body(slug):
   {breadcrumb(trail)}
   <div class="page-hero__tag">{k['tag']}</div>
   <h1>{k['h1']}</h1>
-  <p class="page-hero__sub">{c.get('intro') or c['angles'][0][1]}</p>
+  <p class="page-hero__sub">Cuando alguien en {c['short']} busca lo que vendes, Google decide en el móvil y en el pack de Maps quién aparece. Trabajo el SEO de {c['name']} con la base técnica, el Google Business Profile y el contenido local que la mayoría de webs de la zona no tiene. Auditoría gratis y precios claros, desde 300 €.</p>
   <div class="hero__btns">
     <a href="contacto.html" class="btn btn--primary">Solicitar auditoría gratis →</a>
     <a href="{WA}" class="btn btn--outline" target="_blank">💬 WhatsApp</a>
@@ -116,7 +120,7 @@ def seo_body(slug):
     </div>
     <div>
       <h3 style="font-size:1.1rem;margin-bottom:12px">Webs que ya posicionan en la bahía</h3>
-      <p style="color:var(--gray);font-size:.95rem;line-height:1.7;margin-bottom:16px">No vendo humo: estas son webs propias que gestiono y que ya están en página 1 por búsquedas locales de la zona. Al abrirte el mismo método.</p>
+      <p style="color:var(--gray);font-size:.95rem;line-height:1.7;margin-bottom:16px">No vendo humo: estas son webs propias que gestiono y que ya están en página 1 por búsquedas locales de la zona. El mismo método, aplicado a tu negocio.</p>
       {fleet_block(c['fleet_keys'])}
     </div>
   </div>

@@ -442,3 +442,8 @@ a.btn--primary, .article-body a.btn--primary, .blog-cta a.btn--primary {
 a.btn--outline, .article-body a.btn--outline, .blog-cta a.btn--outline {
   color: #ffffff !important;
 }
+
+/* responsive: tabla de precios no desborda en móvil (2026-11-27) */
+@media (max-width:768px){
+  .price-table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+}
