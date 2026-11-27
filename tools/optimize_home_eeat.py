@@ -114,7 +114,9 @@ h = h[:b0.start()] + NEW_SCHEMA + h[b0.end():]
 
 # ---------- 5. Meta description ----------
 h = re.sub(r'<meta name="description" content="[^"]*"',
-           '<meta name="description" content="Juan Casas, consultor SEO en Cádiz. SEO local para negocios de servicios de la provincia: auditoría desde 150 €, SEO mensual desde 250 €, sin permanencia. Pide tu auditoría gratis."', h, count=1)
+           '<meta name="description" content="Consultor SEO en Cádiz. SEO local para negocios de servicios de la provincia: auditoría desde 150 €, SEO mensual desde 250 €, sin permanencia. Soy Juan Casas, trabajas directamente conmigo. Pide tu auditoría gratis."', h, count=1)
+# title: kw primero, nombre al final (la marca apenas tiene búsquedas propias)
+h = re.sub(r'<title>[^<]*</title>', '<title>Consultor SEO en Cádiz — Juan Casas | Casas Digital</title>', h, count=1)
 
 open(P, 'w', encoding='utf-8').write(h)
 print('OK index.html — H1:', re.search(r'<h1>(.*?)</h1>', h, re.S).group(1), '| FAQ visibles:', h.count('faq__item'), '| schema Person:', '"@type":"Person"' in h, '| FAQPage:', '"FAQPage"' in h, '| palabras:', len(re.sub(r'<[^>]+>', ' ', re.sub(r'<script.*?</script>|<style.*?</style>', '', h, flags=re.S)).split()))
