@@ -452,3 +452,15 @@ a.btn--outline, .article-body a.btn--outline, .blog-cta a.btn--outline {
 @media (max-width:768px){
   .price-table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
 }
+
+/* Grid de zonas (municipios SEO / diseño web) — más compacto que el grid de servicios */
+.zones-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.zones-grid .service{padding:22px 20px}
+.zones-grid .service__icon{width:36px;height:36px;font-size:1.1rem;margin-bottom:12px;border-radius:8px}
+.zones-grid .service h3{font-size:1rem;margin-bottom:8px}
+.zones-grid .service h3 a{color:#fff}
+.zones-grid .service h3 a:hover{color:var(--accent)}
+.zones-grid .service p{font-size:.85rem;line-height:1.6}
+.zones-sub{display:block;margin:28px 0 8px;font-size:1.05rem;font-weight:600;color:#fff}
+@media(max-width:1024px){.zones-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.zones-grid{grid-template-columns:1fr}}
